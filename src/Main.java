@@ -7,17 +7,22 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int N, quantia;
+		int N, quantia, nteste = 0;
 		char tipo;
 		double percentual;
 		
 		// leitura dos dados
 		
 		N = sc.nextInt();
-		quantia = sc.nextInt();
-		tipo = sc.next().charAt(0);
 		
 		
+		// calculos
+		
+		while (nteste != N) {
+			quantia = sc.nextInt();
+			tipo = sc.next().charAt(0);
+			nteste = nteste + 1;
+		}
 		
 		
 		sc.close();
