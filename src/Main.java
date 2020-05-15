@@ -7,9 +7,9 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int N, quantia, nteste = 0;
+		int N, quantia, nteste = 0, coelhos=0, ratos=0, sapos=0;
 		char tipo;
-		double percentual;
+		double percentualCoelhos, percentualRatos, percentualSapos;
 		
 		// leitura dos dados
 		
@@ -22,6 +22,16 @@ public class Main {
 			quantia = sc.nextInt();
 			tipo = sc.next().charAt(0);
 			nteste = nteste + 1;
+			
+		if (tipo == 'C') {
+			coelhos = coelhos + quantia;
+		}
+		if (tipo == 'R') {
+			ratos = ratos + quantia;
+		}
+		if (tipo == 'S') {
+			sapos = sapos + quantia;
+		}
 		}
 		
 		
