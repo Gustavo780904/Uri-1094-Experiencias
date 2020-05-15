@@ -7,7 +7,7 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int N, quantia, nteste = 0, coelhos=0, ratos=0, sapos=0;
+		int N, quantia, nteste = 0, coelhos=0, ratos=0, sapos=0, totalCobaias;
 		char tipo;
 		double percentualCoelhos, percentualRatos, percentualSapos;
 		
@@ -16,7 +16,7 @@ public class Main {
 		N = sc.nextInt();
 		
 		
-		// calculos
+		// Contagem das cobaias
 		
 		while (nteste != N) {
 			quantia = sc.nextInt();
@@ -33,7 +33,12 @@ public class Main {
 			sapos = sapos + quantia;
 		}
 		}
+		//cálculos
 		
+		totalCobaias = sapos + coelhos + coelhos;
+		percentualCoelhos = (100 * coelhos) / totalCobaias;
+		percentualRatos = (100 * ratos) / totalCobaias;
+		percentualSapos = (100 * sapos) / totalCobaias;
 		
 		sc.close();
 
