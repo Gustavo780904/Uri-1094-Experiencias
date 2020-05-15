@@ -35,10 +35,19 @@ public class Main {
 		}
 		//cálculos
 		
-		totalCobaias = sapos + coelhos + coelhos;
-		percentualCoelhos = (100 * coelhos) / totalCobaias;
-		percentualRatos = (100 * ratos) / totalCobaias;
-		percentualSapos = (100 * sapos) / totalCobaias;
+		totalCobaias = sapos + coelhos + ratos;
+		percentualCoelhos = (double) (100 * coelhos) / totalCobaias;
+		percentualRatos = (double) (100 * ratos) / totalCobaias;
+		percentualSapos = (double) (100 * sapos) / totalCobaias;
+		
+		//impressão dos resultados
+		System.out.println("Total: " + totalCobaias + " cobaias");
+		System.out.println("Total de coelhos: " + coelhos);
+		System.out.println("Total de ratos: " + ratos);
+		System.out.println("Total de sapos: " + sapos);
+		System.out.printf("Percentual de coelhos: %.2f %%%n", percentualCoelhos);
+		System.out.printf("Percentual de ratos: %.2f %%%n", percentualRatos);
+		System.out.printf("Percentual de sapos: %.2f %%%n", percentualSapos);
 		
 		sc.close();
 
